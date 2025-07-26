@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 웹사이트</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: '맑은 고딕', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        nav {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            color: #667eea;
+        }
+        
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>환영합니다!</h1>
+        <p>저희 웹사이트에 오신 것을 환영합니다</p>
+    </header>
+    
+    <nav>
+        <a href="#about">회사소개</a>
+        <a href="#services">서비스</a>
+        <a href="#contact">연락처</a>
+    </nav>
+    
+    <div class="content">
+        <div id="about" class="section">
+            <h2>회사소개</h2>
+            <p>저희는 고객 만족을 최우선으로 생각하는 회사입니다. 다양한 경험과 전문성을 바탕으로 최고의 서비스를 제공해드립니다.</p>
+        </div>
+        
+        <div id="services" class="section">
+            <h2>서비스</h2>
+            <p>• 웹사이트 제작<br>
+               • 모바일 앱 개발<br>
+               • 디자인 서비스<br>
+               • 기술 컨설팅</p>
+        </div>
+        
+        <div id="contact" class="section">
+            <h2>연락처</h2>
+            <p>📍 주소: 서울특별시 어딘가<br>
+               📞 전화: 02-123-4567<br>
+               📧 이메일: hello@mywebsite.com</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 내 웹사이트. All rights reserved.</p>
+    </footer>
+</body>
+</html>
